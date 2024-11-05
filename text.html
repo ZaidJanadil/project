@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.9</title>
+</head>
+<body>
+    <input type="text" id="text" />
+    <script>
+        var text = document.getElementById('text');
+    
+        var changeText = function() {
+            console.log(this.value)
+        }
+
+        fucusin = function() {
+            console.log('fucusin');
+        },
+
+        focusout = function() {
+            console.log('focusout');
+        }
+
+        text.addEventListener('fucus', fucusin, false);
+        text.addEventListener('blur', focusout, false);
+    </script>
+</body>
+</html>
